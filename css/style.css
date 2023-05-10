@@ -44,6 +44,7 @@ header .icons i:last-child {
 }
 header .btn {
     transition: none;
+    border: none;
 }
 header .btn:hover, header .btn:focus {
     border: none;
@@ -60,9 +61,6 @@ header .fa-bell {
 /* FINE SIDE BAR */
 .side-bar .home, .side-bar .stats {
     margin-bottom: 20px;
-}
-.side-bar span {
-    font-size: 18px;
 }
 .side-bar .home span {
     margin-left: 15px;
@@ -81,6 +79,54 @@ header .fa-bell {
 }
 /* INIZIO MAIN */
 /* INIZIO TOP BAR */
+.top-bar {
+    background-color: rgb(27, 114, 232);
+}
+.top-bar .col-12:first-child, .top-bar .col-12:nth-child(2) {
+    order: 1;
+}
+.top-bar .right-content, .top-bar .left-content {
+    margin-bottom: 25px;
+}
+.top-bar h2::after {
+    content: "Piano blaze";
+    font-size: 18px;
+    margin-left: 10px;
+}
+.top-bar .apps .number-group {
+    white-space: nowrap;
+}
+.top-bar .apps .number, .top-bar h2::after, .top-bar .desktop .app {
+    padding: 2px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+.top-bar .apps .mobile i {
+    font-size: 10px;
+    transform: translate(0, -11%);
+    margin-left: 10px;
+    padding: 9px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 14px;
+}
+.top-bar .desktop {
+    margin-left: 10px;
+}
+.top-bar .app {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.top-bar .middle-content span {
+    font-size: 30px;
+}
+.top-bar .right-content i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 15px;
+    padding: 10px 12.5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
 /* FINE TOP BAR */
 /* INIZIO MAIN BODY */
 /* FINE MAIN BODY */
@@ -119,24 +165,14 @@ main {
 .h-100 {
     height: 100%;
 }
+.side-bar span, .top-bar {
+    font-size: 18px;
+}
+h2 {
+    font-size: 35px;
+}
 /* FINE GENERAL */
 /* DA CANCELLARE */
-.side-bar .content {
-    height: 150px;
-    width: 100%;
-    background-color: aqua;
-}
-main {
-    background-color: green;
-}
-.top-bar {
-    background-color: goldenrod;
-}
-.top-bar .content {
-    height: 90px;
-    background-color: darkblue;
-    margin-bottom: 10px;
-}
 .next-classes .content {
     height: 250px;
     background-color: gray;
@@ -155,6 +191,14 @@ main {
 }
 /* DA CANCELLARE */
 /* INIZIO MEDIA */
+@media screen and (min-width: 768px) {
+    .top-bar .col-12:first-child, .top-bar .col-12:nth-child(2) {
+        order: 0;
+    }
+    .top-bar .right-content, .top-bar .left-content {
+        margin-bottom: 0px;
+    }
+}
 @media screen and (min-width: 1200px) {
     .side-bar {
         width: 180px;

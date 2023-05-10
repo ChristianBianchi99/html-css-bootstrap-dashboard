@@ -10,6 +10,9 @@ body {
 
 /* FINE HEADER */
 /* INIZIO SIDE BAR */
+.side-bar {
+    background-color: rgb(20, 42, 64);
+}
 /* FINE SIDE BAR */
 /* INIZIO MAIN */
 /* INIZIO TOP BAR */
@@ -24,6 +27,13 @@ header {
     top: 0;
     left: 0;
     right: 0;
+}
+.side-bar {
+    width: 90px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    bottom: 0;
 }
 /* FINE LAYOUT */
 /* INIZIO GENERAL */
@@ -43,6 +53,16 @@ header .content {
     height: 70px;
     width: 100%;
 }
+.side-bar .content {
+    height: 150px;
+    width: 100%;
+    background-color: aqua;
+}
 /* DA CANCELLARE */
 /* INIZIO MEDIA */
+@media screen and (min-width: 1200px) {
+    .side-bar {
+        width: 180px;
+    }
+}
 /* FINE MEDIA */

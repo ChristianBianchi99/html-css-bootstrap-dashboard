@@ -35,6 +35,13 @@ header {
     left: 0;
     bottom: 0;
 }
+main {
+    height: calc(100% - 90px);
+    width: calc(100% - 90px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 /* FINE LAYOUT */
 /* INIZIO GENERAL */
 .w-100 {
@@ -58,11 +65,26 @@ header .content {
     width: 100%;
     background-color: aqua;
 }
+main {
+    background-color: green;
+}
+.top-bar {
+    height: 300px;
+    background-color: goldenrod;
+}
+.top-bar .content {
+    height: 90px;
+    background-color: darkblue;
+    margin-bottom: 10px;
+}
 /* DA CANCELLARE */
 /* INIZIO MEDIA */
 @media screen and (min-width: 1200px) {
     .side-bar {
         width: 180px;
+    }
+    main {
+        width: calc(100% - 180px);
     }
 }
 /* FINE MEDIA */

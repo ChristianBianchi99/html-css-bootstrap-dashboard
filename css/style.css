@@ -55,8 +55,30 @@ header .fa-bell {
 /* INIZIO SIDE BAR */
 .side-bar {
     background-color: rgb(20, 42, 64);
+    padding: 12px;
 }
 /* FINE SIDE BAR */
+.side-bar .home, .side-bar .stats {
+    margin-bottom: 20px;
+}
+.side-bar span {
+    font-size: 18px;
+}
+.side-bar .home span {
+    margin-left: 15px;
+}
+.side-bar .stats span {
+    margin-left: 21.2px;
+}
+.side-bar .signals span {
+    margin-left: 11.85px;
+}
+.side-bar .admin span {
+    margin-left: 18.1px;
+}
+.side-bar i {
+    font-size: 25px;
+}
 /* INIZIO MAIN */
 /* INIZIO TOP BAR */
 /* FINE TOP BAR */
@@ -88,6 +110,9 @@ main {
 }
 /* FINE LAYOUT */
 /* INIZIO GENERAL */
+.side-bar, .top-bar {
+    color: white;
+}
 .w-100 {
     width: 100%;
 }

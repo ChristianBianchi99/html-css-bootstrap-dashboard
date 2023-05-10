@@ -7,7 +7,50 @@ body {
     background-color: rgb(248, 249, 250);
 }
 /* INIZIO HEADER */
-
+header .content {
+    padding: 0 10px;
+    margin: 10px 0;
+    background-color: white;
+    height: 60px;
+}
+header .logo-mobile img {
+    height: 60px;
+}
+header .logo-desktop img {
+    height: 35px;
+}
+header .search {
+    margin: 0 15px;
+    background-color: rgb(229, 229, 229);
+    height: 50px;
+    border-radius: 7px;
+    width: calc(100% - 66px);
+}
+header .search i {
+    margin: 0 10px;
+}
+header .search input {
+    background-color: transparent;
+    border: none;
+}
+header .icons {
+    white-space: nowrap;
+}
+header .icons i {
+    margin-right: 15px;
+}
+header .icons i:last-child {
+    margin-right: 10px;
+}
+header .btn {
+    transition: none;
+}
+header .btn:hover, header .btn:focus {
+    border: none;
+}
+header .fa-bell {
+    color: rgb(255, 143, 0);
+}
 /* FINE HEADER */
 /* INIZIO SIDE BAR */
 .side-bar {
@@ -22,22 +65,22 @@ body {
 /* FINE MAIN */
 /* INIZIO LAYOUT */
 header {
-    height: 90px;
+    height: 80px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
 }
 .side-bar {
-    width: 90px;
+    width: 80px;
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 0;
     bottom: 0;
 }
 main {
-    height: calc(100% - 90px);
-    width: calc(100% - 90px);
+    height: calc(100% - 80px);
+    width: calc(100% - 80px);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -53,14 +96,6 @@ main {
 }
 /* FINE GENERAL */
 /* DA CANCELLARE */
-header {
-    background-color: purple;
-}
-header .content {
-    background-color: blueviolet;
-    height: 70px;
-    width: 100%;
-}
 .side-bar .content {
     height: 150px;
     width: 100%;

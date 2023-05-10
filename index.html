@@ -13,11 +13,37 @@
 <body>
     <!-- INIZIO HEADER -->
     <header>
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-12 d-flex align-items-center p-0 h-100">
-                    <div class="content">
-
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="content d-flex align-items-center">
+                        <div class="logo">
+                            <div class="logo-mobile d-xl-none">
+                                <img src="./img/mobile-logo.png" alt="Logo">
+                            </div>
+                            <div class="logo-desktop d-none d-xl-block">
+                                <img src="./img/logo.svg" alt="Logo">
+                            </div>
+                        </div>
+                        <div class="search d-flex align-items-center">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" class="w-100" placeholder="Prova a cercare: Lezioni di Laravel">
+                        </div>
+                        <div class="icons d-none d-xl-block d-flex align-items-center">
+                            <i class="fa-solid fa-list"></i>
+                            <i class="fa-solid fa-circle-question"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                          </div>
                     </div>
                 </div>
             </div>

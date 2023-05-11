@@ -129,6 +129,34 @@ header .fa-bell {
 }
 /* FINE TOP BAR */
 /* INIZIO MAIN BODY */
+/* Sezione Prossime classi */
+.next-classes .table {
+    table-layout: fixed;
+}
+.next-classes .right-columns {
+    width: 105px;
+    text-align: center;
+}
+.next-classes .left-column i {
+    font-size: 20px;
+    vertical-align: middle;
+    background-color: rgb(242, 101, 81);
+    padding: 8px 5px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+}
+.next-classes .right-columns i {
+    font-size: 20px;
+    color: rgb(108, 117, 125);
+    border: 1px solid rgb(108, 117, 125);
+    padding: 7px 7px;
+    border-radius: 5px;
+}
+.next-classes .right-columns i:last-child {
+    padding: 7px 8.2px;
+    margin-left: 5px;
+}
 /* FINE MAIN BODY */
 /* FINE MAIN */
 /* INIZIO LAYOUT */
@@ -169,7 +197,7 @@ main {
     font-size: 18px;
 }
 h2 {
-    font-size: 35px;
+    font-size: 30px;
 }
 /* FINE GENERAL */
 /* DA CANCELLARE */
@@ -207,7 +235,6 @@ h2 {
         width: calc(100% - 180px);
     }
     .max-h {
-        max-height: 500px;
+        max-height: 600px;
     }
-}
 /* FINE MEDIA */

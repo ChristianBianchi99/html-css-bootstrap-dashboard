@@ -157,6 +157,15 @@ header .fa-bell {
     padding: 7px 8.2px;
     margin-left: 5px;
 }
+/* Sezione F.A.Q. */
+.f-a-q .accordion-item {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.f-a-q .accordion-item:last-child {
+    border-bottom: none;
+}
 /* FINE MAIN BODY */
 /* FINE MAIN */
 /* INIZIO LAYOUT */
@@ -201,14 +210,6 @@ h2 {
 }
 /* FINE GENERAL */
 /* DA CANCELLARE */
-.next-classes .content {
-    height: 250px;
-    background-color: gray;
-}
-.f-a-q .content {
-    height: 150px;
-    background-color: aqua;
-}
 .todo .content {
     height: 150px;
     background-color: firebrick;
@@ -233,8 +234,5 @@ h2 {
     }
     main {
         width: calc(100% - 180px);
-    }
-    .max-h {
-        max-height: 600px;
     }
 /* FINE MEDIA */

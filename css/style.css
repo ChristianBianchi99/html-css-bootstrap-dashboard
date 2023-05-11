@@ -166,6 +166,24 @@ header .fa-bell {
 .f-a-q .accordion-item:last-child {
     border-bottom: none;
 }
+/* Sezione Todo */
+.todo .checklist {
+    border: 1px solid rgb(210, 210, 210);
+    padding: 5px 15px;
+    border-bottom: none;
+}
+.todo .checklist:last-child {
+    border-bottom: 1px solid rgb(210, 210, 210);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.todo .checklist:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.todo .checkbox {
+    margin-right: 5px;
+}
 /* FINE MAIN BODY */
 /* FINE MAIN */
 /* INIZIO LAYOUT */
@@ -210,10 +228,6 @@ h2 {
 }
 /* FINE GENERAL */
 /* DA CANCELLARE */
-.todo .content {
-    height: 150px;
-    background-color: firebrick;
-}
 .active-users .content {
     height: 250px;
     background-color: darkslategrey;
@@ -234,5 +248,8 @@ h2 {
     }
     main {
         width: calc(100% - 180px);
+    }
+    .max-h {
+        max-height: 950px;
     }
 /* FINE MEDIA */

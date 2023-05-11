@@ -88,6 +88,9 @@ header .fa-bell {
 .top-bar .right-content, .top-bar .left-content {
     margin-bottom: 25px;
 }
+.top-bar h2 {
+    font-size: 30px;
+}
 .top-bar h2::after {
     content: "Piano blaze";
     font-size: 18px;
@@ -134,11 +137,11 @@ header .fa-bell {
     table-layout: fixed;
 }
 .next-classes .right-columns {
-    width: 105px;
+    width: 95px;
     text-align: center;
 }
 .next-classes .left-column i {
-    font-size: 20px;
+    font-size: 15px;
     vertical-align: middle;
     background-color: rgb(242, 101, 81);
     padding: 8px 5px;
@@ -147,7 +150,7 @@ header .fa-bell {
     margin-right: 10px;
 }
 .next-classes .right-columns i {
-    font-size: 20px;
+    font-size: 15px;
     color: rgb(108, 117, 125);
     border: 1px solid rgb(108, 117, 125);
     padding: 7px 7px;
@@ -183,6 +186,25 @@ header .fa-bell {
 }
 .todo .checkbox {
     margin-right: 5px;
+}
+/* Sezione Utenti attivi */
+.active-users .graph, .active-users .months, .active-users .report {
+    border: 1px solid rgb(210, 210, 210);
+    border-bottom: none;
+    padding: 10px 15px;
+}
+.active-users .report {
+    border-bottom: 1px solid rgb(210, 210, 210);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.active-users .graph {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.active-users .graph .title {
+    font-size: 20px;
+    margin-top: 10px;
 }
 /* FINE MAIN BODY */
 /* FINE MAIN */
@@ -221,18 +243,15 @@ main {
     height: 100%;
 }
 .side-bar span, .top-bar {
-    font-size: 18px;
+    font-size: 16px;
 }
 h2 {
-    font-size: 30px;
+    font-size: 25px;
+}
+.next-classes, .f-a-q, .todo, .active-users {
+    font-size: 14px;
 }
 /* FINE GENERAL */
-/* DA CANCELLARE */
-.active-users .content {
-    height: 250px;
-    background-color: darkslategrey;
-}
-/* DA CANCELLARE */
 /* INIZIO MEDIA */
 @media screen and (min-width: 768px) {
     .top-bar .col-12:first-child, .top-bar .col-12:nth-child(2) {
@@ -252,4 +271,5 @@ h2 {
     .max-h {
         max-height: 950px;
     }
+}
 /* FINE MEDIA */

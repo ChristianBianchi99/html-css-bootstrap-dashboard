@@ -145,6 +145,9 @@ header .fa-bell {
 .next-classes .table {
     table-layout: fixed;
 }
+.next-classes .hover:hover {
+    background-color: rgb(236, 236, 236);
+}
 .next-classes .right-columns {
     width: 95px;
     text-align: center;

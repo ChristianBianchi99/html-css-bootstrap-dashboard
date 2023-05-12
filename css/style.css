@@ -59,7 +59,7 @@ header .fa-bell {
     padding: 12px;
 }
 .side-bar .home, .side-bar .stats, .side-bar .signals, .side-bar .admin {
-    padding: 10px;
+    padding: 10px 0;
 }
 .side-bar .home span {
     margin-left: 15px;
@@ -78,7 +78,7 @@ header .fa-bell {
 }
 .side-bar .home:hover, .side-bar .stats:hover, .side-bar .signals:hover, .side-bar .admin:hover {
     background-color: rgb(130, 143, 153);
-    padding: 10px;
+    padding: 10px 0;
 }
 /* FINE SIDE BAR */
 /* INIZIO MAIN */
@@ -125,6 +125,11 @@ header .fa-bell {
 }
 .top-bar .middle-content span {
     font-size: 30px;
+}
+.top-bar .right-content button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
 }
 .top-bar .right-content i {
     font-size: 20px;
@@ -212,6 +217,15 @@ header .fa-bell {
 }
 /* FINE MAIN BODY */
 /* FINE MAIN */
+/* INIZO OFFCANVAS */
+.offcanvas.offcanvas-end {
+    width: 100%;
+}
+.offcanvas .title {
+    font-size: 20px;
+    padding-left: 12px;
+}
+/* FINE OFFCANVAS */
 /* INIZIO LAYOUT */
 header {
     height: 80px;
@@ -265,9 +279,21 @@ h2 {
         margin-bottom: 0px;
     }
 }
+@media screen and (min-width: 992px) {
+    .offcanvas.offcanvas-end {
+        width: 700px;
+    }
+}
 @media screen and (min-width: 1200px) {
     .side-bar {
         width: 180px;
+    }
+    .side-bar .home, .side-bar .stats, .side-bar .signals, .side-bar .admin {
+        padding: 10px;
+    }
+    .side-bar .home:hover, .side-bar .stats:hover, .side-bar .signals:hover, .side-bar .admin:hover {
+        background-color: rgb(130, 143, 153);
+        padding: 10px;
     }
     main {
         width: calc(100% - 180px);

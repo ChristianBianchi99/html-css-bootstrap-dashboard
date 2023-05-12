@@ -58,20 +58,29 @@ header .fa-bell {
     background-color: rgb(20, 42, 64);
     padding: 12px;
 }
-/* FINE SIDE BAR */
-.side-bar {
-    background-image: url(../img/sidebar-bg.png);
-    background-size: cover;
+.side-bar .home, .side-bar .stats, .side-bar .signals, .side-bar .admin {
+    padding: 10px;
 }
-.side-bar .top-content li, .side-bar .top-content i {
-    margin-bottom: 20px;
-}
-.side-bar li span {
+.side-bar .home span {
     margin-left: 15px;
 }
-.side-bar i {
-    font-size: 20px;
+.side-bar .stats span {
+    margin-left: 21.2px;
 }
+.side-bar .signals span {
+    margin-left: 11.85px;
+}
+.side-bar .admin span {
+    margin-left: 18.1px;
+}
+.side-bar i {
+    font-size: 25px;
+}
+.side-bar .home:hover, .side-bar .stats:hover, .side-bar .signals:hover, .side-bar .admin:hover {
+    background-color: rgb(130, 143, 153);
+    padding: 10px;
+}
+/* FINE SIDE BAR */
 /* INIZIO MAIN */
 /* INIZIO TOP BAR */
 .top-bar {
